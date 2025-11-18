@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
   );
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Index 0: Home', style: optionStyle),
+    Text('Changed 0: Home', style: optionStyle),
     Text('Index 1: Business', style: optionStyle),
     // Text('Index 2: School', style: optionStyle),
   ];
@@ -113,10 +113,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class AddItemWidget extends StatelessWidget{
+class AddItemWidget extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-    return FloatingActionButton(onPressed: (){print("something added");}, child: Icon(Icons.add),);
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      onPressed: () {
+        print("something added");
+      },
+      child: Icon(Icons.add),
+    );
   }
 }
 
